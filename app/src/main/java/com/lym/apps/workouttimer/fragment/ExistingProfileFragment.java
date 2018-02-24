@@ -13,10 +13,12 @@ import com.lym.apps.workouttimer.R;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class ProfileFragment extends Fragment {
+public class ExistingProfileFragment extends Fragment {
 
 
-    public ProfileFragment() {
+    public static final String TAG = ExistingProfileFragment.class.getName();
+
+    public ExistingProfileFragment() {
         // Required empty public constructor
     }
 
@@ -25,7 +27,7 @@ public class ProfileFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_profile, container, false);
+        return inflater.inflate(R.layout.fragment_existing_profile, container, false);
     }
 
 }
