@@ -1,11 +1,13 @@
 package com.lym.apps.workouttimer.ui;
 
+
 import android.content.Context;
 import android.opengl.GLSurfaceView;
 import android.opengl.GLU;
 
 import javax.microedition.khronos.egl.EGLConfig;
 import javax.microedition.khronos.opengles.GL10;
+
 
 public class OpenGLRenderer implements GLSurfaceView.Renderer {
 

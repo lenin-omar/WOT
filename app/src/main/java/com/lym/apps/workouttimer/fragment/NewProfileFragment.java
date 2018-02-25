@@ -8,8 +8,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.lym.apps.workouttimer.R;
 import com.google.android.gms.plus.PlusOneButton;
+import com.lym.apps.workouttimer.R;
 
 /**
  * A fragment with a Google +1 button.
@@ -20,13 +20,13 @@ import com.google.android.gms.plus.PlusOneButton;
  * create an instance of this fragment.
  */
 public class NewProfileFragment extends Fragment {
+    public static final String TAG = NewProfileFragment.class.getName();
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
     // The request code must be 0 or greater.
     private static final int PLUS_ONE_REQUEST_CODE = 0;
-    public static final String TAG = NewProfileFragment.class.getName();
     // The URL to +1.  Must be a valid URL.
     private final String PLUS_ONE_URL = "http://developer.android.com";
     // TODO: Rename and change types of parameters
@@ -68,8 +68,7 @@ public class NewProfileFragment extends Fragment {
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_new_profile, container, false);
 
@@ -100,8 +99,7 @@ public class NewProfileFragment extends Fragment {
         if (context instanceof OnFragmentInteractionListener) {
             mListener = (OnFragmentInteractionListener) context;
         } else {
-            throw new RuntimeException(context.toString()
-                    + " must implement OnFragmentInteractionListener");
+            throw new RuntimeException(context.toString() + " must implement OnFragmentInteractionListener");
         }
     }
 

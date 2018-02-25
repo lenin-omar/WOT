@@ -1,20 +1,19 @@
 package com.lym.apps.workouttimer;
 
+
 import android.content.Intent;
 import android.graphics.PixelFormat;
 import android.opengl.GLSurfaceView;
+import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.view.Window;
 import android.view.WindowManager;
 
 import com.lym.apps.workouttimer.ui.OpenGLRenderer;
 
-public class SplashActivity extends AppCompatActivity {
 
-    // Splash screen timer
-    private static int SPLASH_TIME_OUT = 3000;
+public class SplashActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,9 +26,10 @@ public class SplashActivity extends AppCompatActivity {
         view.getHolder().setFormat(PixelFormat.TRANSLUCENT);    //Transparent background
         view.setRenderer(new OpenGLRenderer(this));
         setContentView(view);
+        //Splash timer in milliseconds
+        int SPLASH_TIME_OUT = 1000;
         //Transition to Landing screen
         new Handler().postDelayed(new Runnable() {
-
             @Override
             public void run() {
                 // This app main activity
